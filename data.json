@@ -6,9 +6,9 @@
   },
 
   "progress": [
-    { "label": "Books on the shelf", "current": 0, "goal": 1000, "unit": "" },
-    { "label": "Raised toward opening", "current": 0, "goal": 782000, "unit": "GMD" },
-    { "label": "Members", "current": 0, "goal": 150, "unit": "" }
+    { "label": "Books on the shelf", "current": 17, "goal": 1000, "unit": "" },
+    { "label": "Raised toward opening", "current": 142000, "goal": 782000, "unit": "GMD" },
+    { "label": "Members", "current": 3, "goal": 150, "unit": "" }
   ],
 
   "parts": [
@@ -21,8 +21,7 @@
     { "name": "A month of internet, power and cleaning", "cost": "GMD 9,000 · $127", "how": "“This month is powered by…” on the wall and online", "status": "open", "by": "" },
     { "name": "A month of staff", "cost": "GMD 18,000 · $254", "how": "Covers the coordinator and tech host for a month", "status": "open", "by": "" },
     { "name": "A study cube, workstation or the lab", "cost": "Cost to come", "how": "Fund it, or donate a computer", "status": "open", "by": "" },
-    { "name": "Legal registration and launch", "cost": "GMD 13,000–25,000", "how": "Fund it, or help with the paperwork", "status": "open", "by": "" },
-    { "name": "A workshop or workshop series", "cost": "Your time", "how": "Teach what you know. Your name goes on the series", "status": "open", "by": "" },
-    { "name": "The digest", "cost": "Your time", "how": "Help find grants, tools, jobs and programmes each week", "status": "open", "by": "" }
+    { "name": "Launch renovations", "cost": "Cost to come", "how": "Fund it, or help with the paperwork", "status": "open", "by": "" },
+    { "name": "A workshop or workshop series", "cost": "Your time", "how": "Teach what you know. Your name goes on the series", "status": "open", "by": "" }
   ]
 }
