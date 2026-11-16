@@ -1,6 +1,6 @@
 # Clubhaus
 
-The website for Clubhaus, a nonprofit community library and learning hub in The Gambia.
+The website for Clubhaus, a community library and learning hub in The Gambia.
 
 It has two pages: `index.html` (what Clubhaus is) and `join.html` (sign up, contribute, agreements). It's plain HTML and CSS with no build step, hosted free on GitHub Pages.
 
