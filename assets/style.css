@@ -168,3 +168,7 @@ details[open] summary::after{content:"–"}
 .doc h4{margin:10px 0 0;font-size:1rem}
 .doc ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
 .doc .draft{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;background:var(--paper-2);padding:8px 10px;border-radius:4px}
+@media (max-width:620px){
+  .parts li{grid-template-columns:1fr;gap:4px}
+  .parts .cost{white-space:normal;color:var(--blue)}
+}
