@@ -26,12 +26,35 @@
     var el = $("#parts");
     if (!el || !list) return;
     var label = { open: "Open", part: "In progress", claimed: "Claimed" };
-    el.innerHTML = list.map(function (p) {
-      var st = label[p.status] ? p.status : "open";
-      var by = p.by ? " · Thanks to " + esc(p.by) : "";
-      return '<li><span class="name">' + esc(p.name) + '<span class="status ' + st + '">' + label[st] +
-        '</span></span><span class="cost">' + esc(p.cost) + '</span><span class="meta">' + esc(p.how) + by + "</span></li>";
+    var groups = [], byGroup = {};
+    list.forEach(function (p) {
+      var g = p.group || "Other";
+      if (!byGroup[g]) { byGroup[g] = []; groups.push(g); }
+      byGroup[g].push(p);
+    });
+    el.innerHTML = groups.map(function (g) {
+      var items = byGroup[g];
+      var hasFeatured = items.some(function (p) { return p.featured; });
+      return '<div class="pgroup' + (hasFeatured ? "" : " extra") + '"><h3 class="mono">' + esc(g) +
+        '</h3><ul class="parts">' + items.map(function (p) {
+          var st = label[p.status] ? p.status : "open";
+          var by = p.by ? " · Thanks to " + esc(p.by) : "";
+          return '<li' + (p.featured ? "" : ' class="extra"') + '><span class="name">' + esc(p.name) +
+            '<span class="status ' + st + '">' + label[st] + '</span></span><span class="cost">' + esc(p.cost) +
+            '</span><span class="meta">' + esc(p.how) + by + "</span></li>";
+        }).join("") + "</ul></div>";
     }).join("");
+
+    var more = $("#parts-more");
+    var hidden = list.filter(function (p) { return !p.featured; }).length;
+    if (!more || !hidden) { el.classList.add("all"); return; }
+    more.textContent = "See all " + list.length + " parts";
+    more.hidden = false;
+    more.onclick = function () {
+      var open = el.classList.toggle("all");
+      more.setAttribute("aria-expanded", open ? "true" : "false");
+      more.textContent = open ? "Show fewer" : "See all " + list.length + " parts";
+    };
   }
 
   function applySettings(s) {

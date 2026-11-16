@@ -172,3 +172,9 @@ details[open] summary::after{content:"–"}
   .parts li{grid-template-columns:1fr;gap:4px}
   .parts .cost{white-space:normal;color:var(--blue)}
 }
+
+/* grouped parts with "see all" */
+#parts{display:grid;gap:26px}
+.pgroup h3{color:var(--muted);margin-bottom:8px}
+#parts:not(.all) .extra{display:none}
+.parts-wrap{display:grid;gap:22px;justify-items:start}
