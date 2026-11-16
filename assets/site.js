@@ -38,10 +38,10 @@
       return '<div class="pgroup' + (hasFeatured ? "" : " extra") + '"><h3 class="mono">' + esc(g) +
         '</h3><ul class="parts">' + items.map(function (p) {
           var st = label[p.status] ? p.status : "open";
-          var by = p.by ? " · Thanks to " + esc(p.by) : "";
+          var by = p.by ? '<span class="meta">Thanks to ' + esc(p.by) + "</span>" : "";
           return '<li' + (p.featured ? "" : ' class="extra"') + '><span class="name">' + esc(p.name) +
-            '<span class="status ' + st + '">' + label[st] + '</span></span><span class="cost">' + esc(p.cost) +
-            '</span><span class="meta">' + esc(p.how) + by + "</span></li>";
+            (st === "open" ? "" : '<span class="status ' + st + '">' + label[st] + '</span>') + '</span><span class="cost">' + esc(p.cost) +
+            '</span>' + by + "</li>";
         }).join("") + "</ul></div>";
     }).join("");
 

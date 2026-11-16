@@ -30,7 +30,6 @@
       "featured": true,
       "name": "A book",
       "cost": "About $10 · GMD 710",
-      "how": "Fund one or give one. Your name goes inside the cover",
       "status": "open",
       "by": ""
     },
@@ -39,7 +38,6 @@
       "featured": false,
       "name": "A shelf of about 50 books",
       "cost": "About $500 · GMD 35,500",
-      "how": "Your name on the shelf",
       "status": "open",
       "by": ""
     },
@@ -48,7 +46,6 @@
       "featured": false,
       "name": "Education & skills collection",
       "cost": "About $2,500 · GMD 177,500",
-      "how": "Fund it, or help pick the titles and run the book drive",
       "status": "open",
       "by": ""
     },
@@ -57,7 +54,6 @@
       "featured": false,
       "name": "African literature & history collection",
       "cost": "About $2,500 · GMD 177,500",
-      "how": "Fund it, or help pick the titles and run the book drive",
       "status": "open",
       "by": ""
     },
@@ -66,7 +62,6 @@
       "featured": false,
       "name": "Children & youth collection",
       "cost": "About $2,500 · GMD 177,500",
-      "how": "Fund it, or help pick the titles and run the book drive",
       "status": "open",
       "by": ""
     },
@@ -75,7 +70,6 @@
       "featured": false,
       "name": "Reference & technology collection",
       "cost": "About $2,500 · GMD 177,500",
-      "how": "Fund it, or help pick the titles and run the book drive",
       "status": "open",
       "by": ""
     },
@@ -84,7 +78,6 @@
       "featured": true,
       "name": "A computer for the lab",
       "cost": "About $1,000 · GMD 71,000",
-      "how": "Fund a used Mac, or donate one",
       "status": "open",
       "by": ""
     },
@@ -93,7 +86,6 @@
       "featured": false,
       "name": "The full computer lab (6 computers)",
       "cost": "About $6,000 · GMD 426,000",
-      "how": "Your name on the lab",
       "status": "open",
       "by": ""
     },
@@ -102,7 +94,6 @@
       "featured": true,
       "name": "A study cube",
       "cost": "About $500 · GMD 35,500",
-      "how": "Desk, chair, light and power. Your name on the cube",
       "status": "open",
       "by": ""
     },
@@ -111,7 +102,6 @@
       "featured": false,
       "name": "Launch renovations",
       "cost": "Cost to come",
-      "how": "Fund it, or help with the paperwork",
       "status": "open",
       "by": ""
     },
@@ -120,7 +110,6 @@
       "featured": true,
       "name": "A month of internet, power and cleaning",
       "cost": "About $150 · GMD 10,650",
-      "how": "“This month is powered by…” on the wall and online",
       "status": "open",
       "by": ""
     },
@@ -129,7 +118,6 @@
       "featured": false,
       "name": "A month of staff",
       "cost": "About $300 · GMD 21,300",
-      "how": "Covers the coordinator and tech host for a month",
       "status": "open",
       "by": ""
     },
@@ -138,7 +126,6 @@
       "featured": true,
       "name": "A workshop or workshop series",
       "cost": "Your time",
-      "how": "Teach what you know. Your name goes on the series",
       "status": "open",
       "by": ""
     }
